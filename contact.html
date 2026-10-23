@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Leka Comedy</title>
+    <meta name="description" content="Book Leka for your next show, festival, or event. Email, Instagram, and more.">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous:wght@400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #3e2723; /* Deep vintage brown */
-            color: #ffcc80; /* Soft warm text */
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+            font-family: 'Nunito', sans-serif;
+            scroll-behavior: smooth;
         }
-        .text-velma {
-            color: #ff9800; /* Vibrant retro orange */
-        }
-        .border-velma {
-            border-color: #ff9800;
-        }
-        .bg-velma-dark {
-            background-color: #4e342e;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Righteous', sans-serif;
         }
         .nav-link {
-            color: #ffcc80;
+            color: #f5f5f5;
         }
         .nav-link.active {
-            color: #ff9800;
+            color: #ffcc80;
             background-color: rgba(255, 152, 0, 0.15);
             border: 1px solid rgba(255, 152, 0, 0.5);
             padding: 8px 16px;
@@ -34,64 +32,92 @@
         }
     </style>
 </head>
-<body class="font-sans min-h-screen flex flex-col">
-    
-    <!-- Navigation Header -->
-    <header class="border-b border-[#ff9800]/30 sticky top-0 bg-[#3e2723] z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center">
-                <img src="LKACMDYLogo.jpg" alt="Leka Comedy Logo" class="h-10 md:h-14 w-auto object-contain rounded-md border border-[#ff9800]/50 shadow-sm hover:scale-105 transition-transform duration-200">
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 w-full border-b border-[#ff9800]/30 bg-[#1a1a1a]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
+            <a href="index.html" class="shrink-0 flex items-center">
+                <img src="LKACMDYLogo.png" alt="Leka Comedy" class="block h-auto max-h-12 md:max-h-16 w-auto max-w-[200px] object-contain">
             </a>
-            <nav class="hidden md:flex gap-6 items-center">
-                <a href="index.html" class="text-sm font-semibold nav-link">Home</a>
-                <a href="about.html" class="text-sm font-semibold nav-link">About Me</a>
-                <a href="gallery.html" class="text-sm font-semibold nav-link">Upcoming Shows</a>
-                <a href="reviews.html" class="text-sm font-semibold nav-link">Reviews</a>
-                <a href="contact.html" class="text-sm font-semibold nav-link active">Contact</a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Home</a>
+                <a href="about.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">About Me</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Upcoming Shows</a>
+                <a href="reviews.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Reviews</a>
+                <a href="contact.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link active">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="flex-grow py-16 px-4">
-        <div class="max-w-2xl mx-auto space-y-10">
-            <div class="text-center space-y-4">
-                <span class="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-velma text-velma bg-[#ff9800]/15">
-                    Get in Touch
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden py-20 md:py-28 px-4 text-center bg-[#1a1a1a]">
+            <span class="absolute top-8 left-16 text-2xl select-none pointer-events-none text-[#ffcc80]">✦</span>
+            <span class="absolute top-14 right-20 text-xl select-none pointer-events-none text-[#ff9800]">✦</span>
+            <span class="absolute bottom-10 left-1/3 text-lg select-none pointer-events-none text-[#800000]">✦</span>
+            <div class="max-w-2xl mx-auto flex flex-col items-center gap-5">
+                <span class="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#ff9800]/15 border border-[#ff9800] text-[#ff9800]">
+                    Get In Touch
                 </span>
-                <h1 class="text-4xl md:text-5xl font-bold text-velma" style="font-family: serif;">Bookings & Inquiries</h1>
-                <p class="text-[#ffcc80]/90 text-lg">Interested in booking Leka for a show, showcase, or private event? Drop a line below.</p>
+                <h1 class="text-4xl md:text-5xl font-bold text-[#ffcc80]" style="white-space: pre-line;">Contact Info</h1>
+                <p class="text-lg text-[#f5f5f5]/75" style="white-space: pre-line;">Book Leka for your next show, festival, or event. Or just say hi.</p>
             </div>
+        </section>
 
-            <div class="bg-[#4e342e] p-8 rounded-2xl border-2 border-velma shadow-xl space-y-6">
-                <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-                    <div>
-                        <label class="block text-sm font-semibold text-velma mb-2">Your Name</label>
-                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl bg-[#3e2723] border border-velma/40 text-[#ffcc80] focus:outline-none focus:border-velma">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold text-velma mb-2">Email Address</label>
-                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl bg-[#3e2723] border border-velma/40 text-[#ffcc80] focus:outline-none focus:border-velma">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-semibold text-velma mb-2">Message / Event Details</label>
-                        <textarea name="message" rows="5" required class="w-full px-4 py-3 rounded-xl bg-[#3e2723] border border-velma/40 text-[#ffcc80] focus:outline-none focus:border-velma"></textarea>
-                    </div>
-                    <button type="submit" class="w-full py-3 rounded-full font-bold text-sm bg-velma text-[#3e2723] hover:bg-velma/90 transition-all duration-200 shadow-md">
-                        Send Message
-                    </button>
-                </form>
+        <!-- License Plate Logo Display Section (Larger Underneath) -->
+        <section class="py-8 px-4 bg-[#1a1a1a] flex justify-center items-center">
+            <div class="max-w-md w-auto">
+                <img src="LKACMDYLogo.png" alt="Leka Comedy License Plate Logo" class="block h-auto w-full max-w-[320px] mx-auto object-contain drop-shadow-xl">
             </div>
-        </div>
+        </section>
+
+        <!-- Action Buttons Section -->
+        <section class="py-16 px-4 bg-[#16221f]">
+            <div class="max-w-3xl mx-auto flex flex-col items-center gap-6 text-center">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:laughwithleka@gmail.com" class="inline-flex items-center gap-2 px-7 py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-105 border-2 border-[#ff9800] text-[#ffcc80] bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://instagram.com/lekacomedy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-105 border-2 border-[#ff9800] text-[#ffcc80] bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://venmo.com/lekacomedy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-7 py-4 rounded-full font-bold text-base transition-all duration-200 hover:scale-105 border-2 border-[#ff9800] text-[#ffcc80] bg-transparent">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign"><line x1="12" x2="12" y1="2" y2="22"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                        <span>Venmo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Details Section -->
+        <section class="py-16 px-4 text-center bg-[#1a1a1a]">
+            <div class="max-w-xl mx-auto flex flex-col items-center gap-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#f5f5f5]">Booking and Inquiries</h2>
+                <p class="text-base leading-relaxed text-[#f5f5f5]/60">For bookings, collaborations, or general inquiries, reach out via email or Instagram.</p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t py-10 px-4 bg-velma-dark border-[#ff9800]/30 mt-auto">
+    <footer class="border-t py-10 px-4 bg-[#111111] border-[#ff9800]/30 mt-auto">
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-6">
+            <a href="index.html">
+                <img src="LKACMDYLogo.png" alt="Leka Comedy" class="block h-auto max-h-10 w-auto max-w-[160px] object-contain opacity-80 hover:opacity-100 transition-opacity">
+            </a>
+            <nav aria-label="Footer links" class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                <a href="index.html" class="text-sm text-[#f5f5f5]/60 hover:text-[#ff9800] transition-colors">Home</a>
+                <a href="about.html" class="text-sm text-[#f5f5f5]/60 hover:text-[#ff9800] transition-colors">About Me</a>
+                <a href="gallery.html" class="text-sm text-[#f5f5f5]/60 hover:text-[#ff9800] transition-colors">Upcoming Shows</a>
+                <a href="reviews.html" class="text-sm text-[#f5f5f5]/60 hover:text-[#ff9800] transition-colors">Reviews</a>
+                <a href="contact.html" class="text-sm text-[#f5f5f5]/60 hover:text-[#ff9800] transition-colors">Contact</a>
+            </nav>
             <div class="w-24 h-px bg-[#ff9800]/40"></div>
-            <p class="text-xs text-center text-[#ffcc80]/70">
-                &copy; 2026 Leka Comedy. All rights reserved.
-            </p>
+            <p class="text-xs text-center text-[#f5f5f5]/60">&copy; 2026 Leka Comedy. All rights reserved.</p>
         </div>
     </footer>
+
 </body>
 </html>
