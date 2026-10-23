@@ -7,23 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #3e2723; /* Deep vintage brown */
-            color: #ffcc80; /* Soft warm text */
-        }
-        .text-velma {
-            color: #ff9800; /* Vibrant retro orange */
-        }
-        .border-velma {
-            border-color: #ff9800;
-        }
-        .bg-velma-dark {
-            background-color: #4e342e;
+            background-color: #1a1a1a;
+            color: #f5f5f5;
         }
         .nav-link {
-            color: #ffcc80;
+            color: #f5f5f5;
         }
         .nav-link.active {
-            color: #ff9800;
+            color: #ffcc80;
             background-color: rgba(255, 152, 0, 0.15);
             border: 1px solid rgba(255, 152, 0, 0.5);
             padding: 8px 16px;
@@ -37,53 +28,125 @@
 <body class="font-sans min-h-screen flex flex-col">
     
     <!-- Navigation Header -->
-    <header class="border-b border-[#ff9800]/30 sticky top-0 bg-[#3e2723] z-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
-            <a href="index.html" class="flex items-center">
-                <img src="LKACMDYLogo.jpg" alt="Leka Comedy Logo" class="h-10 md:h-14 w-auto object-contain rounded-md border border-[#ff9800]/50 shadow-sm hover:scale-105 transition-transform duration-200">
+    <header class="sticky top-0 z-50 w-full border-b border-[#ff9800]/30 bg-[#1a1a1a]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 md:h-20">
+            <a href="index.html" class="shrink-0 flex items-center">
+                <img src="LKACMDYLogo.png" alt="Leka Comedy" class="block h-auto max-h-12 md:max-h-16 w-auto max-w-[200px] object-contain">
             </a>
-            <nav class="hidden md:flex gap-6 items-center">
-                <a href="index.html" class="text-sm font-semibold nav-link">Home</a>
-                <a href="about.html" class="text-sm font-semibold nav-link active">About Me</a>
-                <a href="gallery.html" class="text-sm font-semibold nav-link">Upcoming Shows</a>
-                <a href="reviews.html" class="text-sm font-semibold nav-link">Reviews</a>
-                <a href="contact.html" class="text-sm font-semibold nav-link">Contact</a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Home</a>
+                <a href="about.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link active">About Me</a>
+                <a href="gallery.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Upcoming Shows</a>
+                <a href="reviews.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Reviews</a>
+                <a href="contact.html" class="px-4 py-2 rounded-full text-sm font-semibold nav-link">Contact</a>
             </nav>
         </div>
     </header>
 
-    <main class="flex-grow py-16 px-4">
-        <div class="max-w-4xl mx-auto space-y-10">
-            <div class="text-center space-y-4">
-                <span class="inline-block px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-velma text-velma bg-[#ff9800]/15">
-                    The Bio
-                </span>
-                <h1 class="text-4xl md:text-5xl font-bold text-velma" style="font-family: serif;">About Leka</h1>
+    <main>
+        <!-- Hero Bio Section -->
+        <section class="relative overflow-hidden py-16 md:py-24 px-4 bg-[#1a1a1a]">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col gap-6">
+                    <span class="inline-block self-start px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest bg-[#ff9800]/15 border border-[#ff9800] text-[#ff9800]">
+                        Comedian / Lyricist
+                    </span>
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight text-[#ffcc80]" style="font-family: serif;">About Me</h1>
+                    <p class="text-lg font-semibold text-[#f5f5f5]/90">Stand Up Comedian. Musical performer. Anxious.</p>
+                    <p class="text-base leading-relaxed text-[#f5f5f5]/80">
+                        Based in Albuquerque, NM, Leka is a Latina/Chicana stand-up comedian whose tightly woven joke writing connects the dots of her unconventional life. Growing up as one of seven with out-of-touch Hispanic parents, including a spicy Latina mom, she now balances a full-time job with raising three neurodivergent kids. Though she occasionally dabbles in sketch and improv, stand-up is where she solves the mysteries of her own brain. Blending clever storytelling, sharply timed callbacks, and musical comedy, she tackles everything from dating red flags and the healthcare system to getting older and full-time #momlyfe.
+                    </p>
+                    <div class="flex gap-3 flex-wrap">
+                        <a href="contact.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm border-2 border-[#ff9800] text-[#ffcc80] hover:scale-105 transition-all">Contact Me</a>
+                        <a href="https://venmo.com/lekacomedy" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm border-2 border-[#800000] text-[#f5f5f5] hover:scale-105 transition-all">Tip Jar (Venmo)</a>
+                    </div>
+                </div>
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative w-72 h-96 md:w-80 md:h-[440px] rounded-2xl overflow-hidden border-4 border-[#ff9800] shadow-2xl rotate-[-2deg]">
+                        <img src="about-photo.jpg" alt="Leka, comedian and performer" class="w-full h-full object-cover">
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="grid md:grid-cols-3 gap-8 items-center bg-[#4e342e] p-6 md:p-8 rounded-2xl border-2 border-velma shadow-xl">
-                <div class="md:col-span-1">
-                    <img src="about-photo.jpg" alt="Leka Comedy Portrait" class="w-full h-auto rounded-xl border border-velma/50 shadow-md">
-                </div>
-                <div class="md:col-span-2 space-y-4 text-[#ffcc80]/90 text-lg leading-relaxed">
-                    <p>
-                        Based out of Albuquerque, New Mexico, Leka brings a sharp, nerdy observer's eye to stand-up comedy. 
-                    </p>
-                    <p>
-                        Blending wit with real-world technical perspective, the routines dive into the hilarious chaos of everyday life, modern quirks, and finding the punchlines in unexpected places.
-                    </p>
+        <!-- Origin Story Section -->
+        <section class="py-16 px-4 bg-[#262626]">
+            <div class="max-w-3xl mx-auto flex flex-col gap-6">
+                <h2 class="text-2xl md:text-3xl font-bold text-[#ffcc80]" style="font-family: serif;">The Origin Story</h2>
+                <p class="text-base leading-relaxed text-[#f5f5f5]/80">
+                    Starting out as a band nerd in high school, Leka spent years immersed in the local music scene. Exploring everything from rock to hip-hop shaped her unique voice as a musical comedian, allowing her to bring a musician's sense of timing to every punchline.
+                </p>
+                <p class="text-base leading-relaxed text-[#f5f5f5]/80">
+                    Whether she is on stage at a comedy club or a festival, Leka brings her whole self to every performance. Laughter might just be what the doctor ordered, official diagnosis not included.
+                </p>
+            </div>
+        </section>
+
+        <!-- Credits Section -->
+        <section class="py-16 px-4 bg-[#1a1a1a]">
+            <div class="max-w-5xl mx-auto space-y-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-[#ffcc80]" style="font-family: serif;">Credits and Appearances</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Stand-Up -->
+                    <div class="rounded-2xl overflow-hidden border-2 border-[#ff9800]/40 bg-[#262626]">
+                        <div class="px-6 py-4 bg-[#ff9800]/15 border-b border-[#ff9800]/30">
+                            <h3 class="text-base font-bold uppercase tracking-widest text-[#ffcc80]">Stand-Up</h3>
+                        </div>
+                        <div class="p-6 space-y-4 text-[#f5f5f5]/85">
+                            <p>Featured for Steven Michael Quezada, April Macie, and Steve Gillespie at Quezadas Comedy Club</p>
+                            <p>Featured for actor/comedian Christie Campagna and hometown comedian Anthony Almanzar</p>
+                            <p>Headliner at Social Work show - Wayward Comedy - Santa Fe, NM<br>Musical Comedy Headliner - Taos Comedy Showcase - Taos, NM</p>
+                        </div>
+                    </div>
+
+                    <!-- Festivals -->
+                    <div class="rounded-2xl overflow-hidden border-2 border-[#ff9800]/40 bg-[#262626]">
+                        <div class="px-6 py-4 bg-[#ff9800]/15 border-b border-[#ff9800]/30">
+                            <h3 class="text-base font-bold uppercase tracking-widest text-[#ffcc80]">Festivals</h3>
+                        </div>
+                        <div class="p-6 space-y-4 text-[#f5f5f5]/85">
+                            <p><strong>New Mexico:</strong><br>Albuquerque Funny Fiesta<br>Cloud Top Comedy Festival (Santa Fe, NM)</p>
+                            <p><strong>Colorado:</strong><br>Front Range Comedy Festival<br>Vatos Locos Comedy Festival</p>
+                            <p><strong>North Carolina:</strong><br>North Carolina Comedy Festival at the Idiot Box</p>
+                        </div>
+                    </div>
+
+                    <!-- Musical Comedy -->
+                    <div class="rounded-2xl overflow-hidden border-2 border-[#ff9800]/40 bg-[#262626]">
+                        <div class="px-6 py-4 bg-[#ff9800]/15 border-b border-[#ff9800]/30">
+                            <h3 class="text-base font-bold uppercase tracking-widest text-[#ffcc80]">Musical Comedy</h3>
+                        </div>
+                        <div class="p-6 space-y-4 text-[#f5f5f5]/85">
+                            <p>Featured for nationally headlining musical comedian Kristin Key</p>
+                            <p>Featured musical comedy set with Calvin Evans (Comedy Central)</p>
+                            <p>Musical Comedy Headliner for the Matriarchy show in Denver, CO</p>
+                        </div>
+                    </div>
+
+                    <!-- Credits -->
+                    <div class="rounded-2xl overflow-hidden border-2 border-[#ff9800]/40 bg-[#262626]">
+                        <div class="px-6 py-4 bg-[#ff9800]/15 border-b border-[#ff9800]/30">
+                            <h3 class="text-base font-bold uppercase tracking-widest text-[#ffcc80]">Credits</h3>
+                        </div>
+                        <div class="p-6 space-y-4 text-[#f5f5f5]/85">
+                            <p>Writer for New Mexico Entertainment Magazine's Awards show 2024 and 2025</p>
+                            <p>Winner of Ahlmaaa's Triple AAA Cabaret</p>
+                            <p>Background - Season 3 - Episode 1 "The Cleaning Lady"</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="border-t py-10 px-4 bg-velma-dark border-[#ff9800]/30 mt-auto">
+    <footer class="border-t py-10 px-4 bg-[#111111] border-[#ff9800]/30 mt-auto">
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-6">
+            <img src="LKACMDYLogo.png" alt="Leka Comedy" class="block h-auto max-h-10 w-auto max-w-[160px] object-contain opacity-80">
             <div class="w-24 h-px bg-[#ff9800]/40"></div>
-            <p class="text-xs text-center text-[#ffcc80]/70">
-                &copy; 2026 Leka Comedy. All rights reserved.
-            </p>
+            <p class="text-xs text-center text-[#f5f5f5]/60">&copy; 2026 Leka Comedy. All rights reserved.</p>
         </div>
     </footer>
 </body>
